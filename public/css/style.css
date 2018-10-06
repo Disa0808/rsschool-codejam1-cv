@@ -63,79 +63,127 @@ header hgroup h2 {
 
 
 /* MAIN */
-main {
-  background-color: #E9E8E5;
-}
-main .container {
-  display: flex;
+  /* LEFT */
+  main {
+    background-color: #E9E8E5;
+    color: #808080;
+  }
+  main .container {
+    display: flex;
+  }
+
+  .box {
+    background:#FFF;
+  }
+
+  .effect{
+    box-shadow: 0 10px 6px -6px #777;
+  }
+
+
+  .contacts {
+    font-size: 15px;
+    color: #000;
+  }
+
+  .contacts ul {
+    list-style: none;
+  }
+
+  .contacts h2 {
+    padding-left: 40px;
+  }
+
+  .location li {
+    margin-bottom: 10px;
+  }
+
+  .location {
+    position:relative;
+    padding-bottom: 10px;
+  }
+
+  .location:after{
+    position:absolute;
+    bottom:0;
+    left:12%;
+    width:70%;
+    border-top:2px solid #000;
+    content:"";
+  }
+
+  .social li {
+    margin-bottom: 10px;
+  }
+
+  .social .skype {
+    color: #00AFF0;
+  }
+
+  .social .linkedin {
+    color: #0077B5;
+  }
+
+  .social .github {
+    color: #000;
+  }
+
+  .info {
+    flex: 3;
+  }
+
+  .additional-info {
+    padding-top: 80px;
+    flex: 1;
+  }
+
+  .additional-info h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding:0;
+    color: #7CBFB8;
+  }
+
+  /* RIGHT */
+  .header {
+    color: #7CBFB8;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+  .header:after{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width:95%;
+    border-top:3px solid #7CBFB8;
+    content:"";
+  }
+
+  .summary p {
+    padding: 0 30px;
+    color: #808080;
 }
 
-.contacts {
-  font-size: 15px;
-}
+  .school {
+    padding: 0 20px 0 120px;
+    position: relative;
+    box-sizing: border-box;
+  }
 
-.contacts ul {
-  list-style: none;
-}
+  .school .date {
+    position: absolute;
+    left: 5px;
+    top: 0;
+  }
 
-.contacts h2 {
-  padding-left: 40px;
-}
 
-.location li {
-  margin-bottom: 10px;
-}
-
-.location {
-  position:relative;
-  padding-bottom: 10px;
-}
-
-.location:after{
-  position:absolute;
-  bottom:0;
-  left:12%;
-  width:70%;
-  border-top:2px solid #000;
-  content:"";
-}
-
-.social li {
-  margin-bottom: 10px;
-}
-
-.social .skype {
-  color: #00AFF0;
-}
-
-.social .linkedin {
-  color: #0077B5;
-}
-
-.social .github {
-  color: #000;
-}
-
-.info {
-  flex: 3;
-}
-
-.box {
-  background:#FFF;
-}
-
-.effect{
-   box-shadow: 0 10px 6px -6px #777;
-}
-
-.additional-info {
-  padding-top: 80px;
-  flex: 1;
-}
-
-.additional-info h2 {
-  text-transform: uppercase;
-  text-align: center;
-  padding:0;
-  color: #7CBFB8;
-}
+  .school::before {
+    content: '';
+    border-right: 1px solid rgba(155, 154, 154, 0.685);
+    position: absolute;
+    height: 80%;
+    left: 100px;
+    top: 10%;
+  }
