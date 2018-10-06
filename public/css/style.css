@@ -64,9 +64,11 @@ header hgroup h2 {
 
 /* MAIN */
   /* LEFT */
+
   main {
     background-color: #E9E8E5;
     color: #808080;
+    padding-bottom: 100px;
   }
   main .container {
     display: flex;
@@ -80,6 +82,9 @@ header hgroup h2 {
     box-shadow: 0 10px 6px -6px #777;
   }
 
+  main .container {
+    display: flex;
+  }
 
   .contacts {
     font-size: 15px;
@@ -211,3 +216,32 @@ header hgroup h2 {
       left: 100px;
       top: 10%;
     }  
+
+
+    /* SKILLS */
+    .skills {
+      padding-bottom: 40px;
+    }
+
+    .skills ul {
+      margin: 0;
+      padding: 0 30px;
+    }    
+
+    .skills li {
+      list-style: none;
+      color: #FFF;
+      background-color: rgb(67, 148, 137);
+      margin-top: 5px;
+      width:200px;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 6px;
+    }
+
+    .skills .content ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+    }
