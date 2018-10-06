@@ -160,30 +160,54 @@ header hgroup h2 {
     border-top:3px solid #7CBFB8;
     content:"";
   }
+    /* SUMMARY */
+    .summary p {
+      padding: 0 30px;
+      color: #808080;
+    }
 
-  .summary p {
-    padding: 0 30px;
-    color: #808080;
-}
+    /* SCHOOL */
+    .school {
+      padding: 0 20px 0 120px;
+      position: relative;
+      box-sizing: border-box;
+    }
 
-  .school {
-    padding: 0 20px 0 120px;
-    position: relative;
-    box-sizing: border-box;
-  }
-
-  .school .date {
-    position: absolute;
-    left: 5px;
-    top: 0;
-  }
+    .school .date {
+      position: absolute;
+      left: 5px;
+      top: 0;
+    }
 
 
-  .school::before {
-    content: '';
-    border-right: 1px solid rgba(155, 154, 154, 0.685);
-    position: absolute;
-    height: 80%;
-    left: 100px;
-    top: 10%;
-  }
+    .school::before {
+      content: '';
+      border-right: 1px solid rgba(155, 154, 154, 0.685);
+      position: absolute;
+      height: 80%;
+      left: 100px;
+      top: 10%;
+    }
+
+    /* JOB */
+    .job {
+      padding: 0 20px 0 120px;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .job .date {
+      position: absolute;
+      left: 5px;
+      top: 0;
+    }
+
+
+    .job::before {
+      content: '';
+      border-right: 1px solid rgba(155, 154, 154, 0.685);
+      position: absolute;
+      height: 80%;
+      left: 100px;
+      top: 10%;
+    }  
