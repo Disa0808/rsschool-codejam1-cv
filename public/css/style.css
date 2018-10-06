@@ -2,8 +2,7 @@
   font-family:'Roboto', Arial, sans-serif;
 }
 .container {
-  max-width: 1024px;
-  width: 100%;
+  width: 1024px;
 	margin: 0 auto;
 }
 
@@ -17,7 +16,7 @@ header {
 
 header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   padding-left: 200px;
 }
@@ -29,7 +28,8 @@ header figure {
   width: 220px;
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 60px;
+  z-index: 10;
 }
 
 header figure img {
@@ -57,5 +57,85 @@ header hgroup h2 {
   font-size: 110%;
   width: 400px;
   padding: 20px 0 0;
+  margin-left: 40px;
   border-bottom: 1px solid #33a4c9;
+}
+
+
+/* MAIN */
+main {
+  background-color: #E9E8E5;
+}
+main .container {
+  display: flex;
+}
+
+.contacts {
+  font-size: 15px;
+}
+
+.contacts ul {
+  list-style: none;
+}
+
+.contacts h2 {
+  padding-left: 40px;
+}
+
+.location li {
+  margin-bottom: 10px;
+}
+
+.location {
+  position:relative;
+  padding-bottom: 10px;
+}
+
+.location:after{
+  position:absolute;
+  bottom:0;
+  left:12%;
+  width:70%;
+  border-top:2px solid #000;
+  content:"";
+}
+
+.social li {
+  margin-bottom: 10px;
+}
+
+.social .skype {
+  color: #00AFF0;
+}
+
+.social .linkedin {
+  color: #0077B5;
+}
+
+.social .github {
+  color: #000;
+}
+
+.info {
+  flex: 3;
+}
+
+.box {
+  background:#FFF;
+}
+
+.effect{
+   box-shadow: 0 10px 6px -6px #777;
+}
+
+.additional-info {
+  padding-top: 80px;
+  flex: 1;
+}
+
+.additional-info h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding:0;
+  color: #7CBFB8;
 }
