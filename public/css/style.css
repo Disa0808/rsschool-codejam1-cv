@@ -245,3 +245,57 @@ header hgroup h2 {
       justify-content: space-around;
       flex-direction: row;
     }
+
+    /* LANGUAGES */
+    .lang-list {
+      list-style: none;
+      font-size: 1.3rem;
+      width: 50%;
+      position: relative;
+    }
+
+    .lang-list::before {
+      content: '';
+      border-right: 1px solid rgba(155, 154, 154, 0.685);
+      position: absolute;
+      height: 80%;
+      right: 20px;
+      top: 10%;
+    }  
+
+    .lang-list li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .progress {
+      position: absolute;
+      right:30px;
+      display: inline-block;
+    }
+
+    .circle {
+      width: 17px;
+      height: 17px;
+      background: rgb(67, 148, 137);
+      border-radius: 50px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .circle__empty {
+      width: 15px;
+      height: 15px;
+      border: 2px solid rgb(67, 148, 137);
+      border-radius: 50px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .languages .content {
+      display:flex;
+    }
+
+    .languages .content p {
+      width: 40%;
+    }
