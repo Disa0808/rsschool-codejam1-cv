@@ -6,11 +6,15 @@
 	margin: 0 auto;
 }
 
+body {
+  background: linear-gradient(to right, #F6EFD2, #CEAD78);
+}
 
 /* HEADER */
 header {
+  margin-top: 20px;
   padding: 0 20px;
-  background-color: #E9E8E5;
+  background: linear-gradient(to right, #F6EFD2, #CEAD78);
 }
 
 header .container {
@@ -72,29 +76,22 @@ header hgroup h2 {
   /* LEFT */
 
   main {
-    background-color: #E9E8E5;
+    background: linear-gradient(to right, #F6EFD2, #CEAD78);
     color: #808080;
   }
   main .container {
     display: flex;
-  }
-
-  .box {
     background:#FFF;
   }
 
-  main .container {
-    display: flex;
+  .contacts h2 {
+    padding-left: 40px;
   }
 
   .contacts ul {
     list-style: none;
     font-size: 15px;
     color: #000;
-  }
-
-  .contacts h2 {
-    padding-left: 40px;
   }
 
   .location li {
@@ -131,10 +128,6 @@ header hgroup h2 {
     color: #000;
   }
 
-  .info {
-    flex: 3;
-  }
-
   .additional-info {
     padding-top: 80px;
     flex: 1;
@@ -147,6 +140,26 @@ header hgroup h2 {
     color: #7CBFB8;
   }
 
+  .load__button {
+    margin-left: 40px;
+    font-size: bold 15px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #7CBFB8;
+    color: #7CBFB8;
+    padding: 10px 20px;
+    transition: 0.4s;
+  }
+
+  .load__button:hover {
+    background-color: #7CBFB8;
+    color:  rgb(255, 255, 255);
+  }
+
+  .info {
+    flex: 3;
+  }
   /* RIGHT */
   .header {
     color: #7CBFB8;
@@ -182,8 +195,7 @@ header hgroup h2 {
       top: 0;
     }
 
-
-    .school::before {
+    .border-right::before {
       content: '';
       border-right: 1px solid rgba(155, 154, 154, 0.685);
       position: absolute;
@@ -204,17 +216,6 @@ header hgroup h2 {
       left: 5px;
       top: 0;
     }
-
-
-    .job::before {
-      content: '';
-      border-right: 1px solid rgba(155, 154, 154, 0.685);
-      position: absolute;
-      height: 80%;
-      left: 100px;
-      top: 10%;
-    }  
-
 
     /* SKILLS */
     .skills {
@@ -300,7 +301,7 @@ header hgroup h2 {
 
   /* FOOTER */
   footer {
-    background-color: #E9E8E5;
+    background: linear-gradient(to right, #F6EFD2, #CEAD78);
     color: #808080;
   }
 
@@ -353,4 +354,16 @@ header hgroup h2 {
     position: absolute;
     right: 10px;
   }
-  
+ 
+
+  .social__bar .skype {
+    color: #00AFF0;
+  }
+
+  .social__bar .linkedin {
+    color: #0077B5;
+  }
+
+  .social__bar .github {
+    color: #000;
+  }
