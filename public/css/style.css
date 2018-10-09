@@ -295,10 +295,6 @@ header hgroup h2 {
       display:flex;
     }
 
-    .languages .content p {
-      width: 40%;
-    }
-
   /* FOOTER */
   footer {
     background: linear-gradient(to right, #F6EFD2, #CEAD78);
